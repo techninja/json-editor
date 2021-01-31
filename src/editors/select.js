@@ -57,9 +57,6 @@ export class SelectEditor extends AbstractEditor {
   }
 
   getValue () {
-    if (!this.dependenciesFulfilled) {
-      return undefined
-    }
     return this.typecast(this.value)
   }
 

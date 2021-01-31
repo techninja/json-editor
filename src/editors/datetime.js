@@ -89,9 +89,6 @@ export class DatetimeEditor extends StringEditor {
   }
 
   getValue () {
-    if (!this.dependenciesFulfilled) {
-      return undefined
-    }
     if (this.schema.type === 'string') {
       return this.value
     }

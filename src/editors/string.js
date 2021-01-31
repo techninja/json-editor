@@ -286,7 +286,7 @@ export class StringEditor extends AbstractEditor {
     if (this.shouldBeUnset() && !hasValueSet) {
       return undefined
     }
-    if (this.imask_instance && this.dependenciesFulfilled && this.options.imask.returnUnmasked) {
+    if (this.imask_instance && this.options.imask.returnUnmasked) {
       return this.imask_instance.unmaskedValue
     } return super.getValue()
   }

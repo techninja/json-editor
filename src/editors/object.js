@@ -1073,9 +1073,6 @@ export class ObjectEditor extends AbstractEditor {
   }
 
   getValue () {
-    if (!this.dependenciesFulfilled) {
-      return undefined
-    }
     const result = super.getValue()
     const isEmpty = obj => typeof obj === 'undefined' || obj === '' ||
     (
